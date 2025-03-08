@@ -1,0 +1,6 @@
+@import url(./setting.css);
+
+@import url(./partials/larg_desktop.css);
+@import url(./partials/desktop.css);
+@import url(./partials/tablet.css);
+@import url(./partials/mobile.css);
