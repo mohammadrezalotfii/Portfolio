@@ -19,6 +19,7 @@
             >mohammadrezalottfii@gmail.com</a
           >
         </div>
+
         <div class="header_center">
           <ul class="items">
             <li class="nav_item">
@@ -43,15 +44,26 @@
             </li>
           </ul>
         </div>
+
         <div class="header_left">
           <a href="#">همکاری با من!</a>
-          <div class="mobile_menu">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="mobile_menu" id="mobileMenu">
+            <span class="open_mobile_menu"></span>
+            <span class="open_mobile_menu"></span>
+            <span class="open_mobile_menu"></span>
+            <span class="close_mobile_menu"></span>
+            <span class="close_mobile_menu"></span>
           </div>
+        </div>
+
+        <div class="dropdown_menu" id="dropDownMenu">
+          <ul>
+            <a href="#"><li>خانه</li></a>
+            <a href="#"><li>نمونه‌کارها</li></a>
+            <a href="#"><li>خدمات</li></a>
+            <a href="#"><li>وبلاگ</li></a>
+            <a href="#"><li>تماس با من</li></a>
+          </ul>
         </div>
       </nav>
     </header>
@@ -278,40 +290,43 @@
         <div class="my_skill_holder">
           <div class="my_skill_top">
             <h2>مهارت‌های من</h2>
-            <p>ما ایده‌ها و در نتیجه خواسته‌های شما را در قالب یک پروژه وب منحصر به فرد قرار می‌دهیم که الهام بخش شما و مشتریان شما است.</p>
+            <p>
+              ما ایده‌ها و در نتیجه خواسته‌های شما را در قالب یک پروژه وب منحصر
+              به فرد قرار می‌دهیم که الهام بخش شما و مشتریان شما است.
+            </p>
           </div>
           <div class="my_skill_items">
             <div class="my_skill_item">
               <div>
-                <img src="./media/image/figma.png" alt="figma">
+                <img src="./media/image/figma.png" alt="figma" />
                 <span>۹۰٪</span>
               </div>
               <p>فیگما</p>
             </div>
             <div class="my_skill_item">
               <div>
-                <img src="./media/image/js.png" alt="figma">
+                <img src="./media/image/js.png" alt="figma" />
                 <span>۸۰٪</span>
               </div>
               <p>جاوا اسکریپت</p>
             </div>
             <div class="my_skill_item">
               <div>
-                <img src="./media/image/react.png" alt="figma">
+                <img src="./media/image/react.png" alt="figma" />
                 <span>۶۰٪</span>
               </div>
               <p>ری‌اکت</p>
             </div>
             <div class="my_skill_item">
               <div>
-                <img src="./media/image/wp.png" alt="figma">
+                <img src="./media/image/wp.png" alt="figma" />
                 <span>۹۵٪</span>
               </div>
               <p>وردپرس</p>
             </div>
             <div class="my_skill_item">
               <div>
-                <img src="./media/image/php.png" alt="figma">
+                <img src="./media/image/php.png" alt="figma" />
                 <span>۹۰٪</span>
               </div>
               <p>پی اچ پی</p>
@@ -319,9 +334,9 @@
           </div>
         </div>
       </section>
-
     </main>
   </body>
 
   <script src="./js/script.js"></script>
+  <script src="./js/mobileMenu.js"></script>
 </html>
