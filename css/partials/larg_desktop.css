@@ -134,6 +134,10 @@
     background-position: 100% 50%;
   }
 
+  div.mobile_menu,div.dropdown_menu{
+    display: none;
+  }
+
   main.main > div {
     width: 100%;
     position: relative;
