@@ -3,9 +3,11 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: morabba !important;
+  scrollbar-width: thin;
+  scrollbar-color: var(--mrl-primery-color) var(--mrl-secondery-color);
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
