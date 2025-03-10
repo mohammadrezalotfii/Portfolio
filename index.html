@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./media/Logo.svg" type="image/svg" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./flaticon-uicons/css/all/all.css" />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
   </head>
   <body>
     <header class="header">
@@ -67,7 +68,7 @@
         </div>
       </nav>
     </header>
-    
+
     <main class="main">
       <div class="hi_holder">
         <section class="hero_section">
@@ -335,14 +336,95 @@
           </div>
         </div>
       </section>
+
       <section class="my_comment">
         <div class="my_comment_holder">
-          <div class="my_comment_header"></div>
-          <div class="my_comment_slider"></div>
+          <div class="my_comment_header">
+            <h2>نظرات همکاران من</h2>
+            <p>
+              توانمندسازی مردم در یک سفر دیجیتالی جدید با خدمات فوق العاده من
+            </p>
+          </div>
+          <div class="my_comment_slider">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper_item_holder">
+                    <img src="./media/my personal.webp" alt="" />
+                    <div class="my_comment-icon">
+                      <i class="fi fi-sr-play"></i>
+                      <i class="fi fi-sr-play"></i>
+                    </div>
+                    <p>
+                      توانمندسازی مردم در یک سفر دیجیتالی جدید با خدمات فوق
+                      العاده من
+                    </p>
+                    <div class="my_comment_info">
+                      <h4>تیم بیلی</h4>
+                      <span>متخصص سئو</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper_item_holder">
+                    <img src="./media/image/testi-1.jpg" alt="" />
+                    <div class="my_comment-icon">
+                      <i class="fi fi-sr-play"></i>
+                      <i class="fi fi-sr-play"></i>
+                    </div>
+                    <p>
+                      توانمندسازی مردم در یک سفر دیجیتالی جدید با خدمات فوق
+                      العاده من
+                    </p>
+                    <div class="my_comment_info">
+                      <h4>تیم بیلی</h4>
+                      <span>متخصص سئو</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper_item_holder">
+                    <img src="./media/image/testi-2.jpg" alt="" />
+                    <div class="my_comment-icon">
+                      <i class="fi fi-sr-play"></i>
+                      <i class="fi fi-sr-play"></i>
+                    </div>
+                    <p>
+                      توانمندسازی مردم در یک سفر دیجیتالی جدید با خدمات فوق
+                      العاده من
+                    </p>
+                    <div class="my_comment_info">
+                      <h4>تیم بیلی</h4>
+                      <span>متخصص سئو</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
   </body>
   <script src="./js/script.js"></script>
   <script src="./js/mobileMenu.js"></script>
+  <script src="./swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 24,
+      loop: true,
+      autoplay: {
+        delay: 10000,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 </html>
