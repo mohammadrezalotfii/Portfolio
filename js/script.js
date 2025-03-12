@@ -87,12 +87,14 @@ let flag = false;
 
 let servItem = document.querySelectorAll(".serv_item");
 servItem.forEach((item) => {
+  servSelector.style.height = item.offsetHeight + "px";
   item.addEventListener("mouseenter", () => {
     servItem.forEach((el) => {
       el.classList.remove("serv_hover");
     });
     item.classList.add("serv_hover");
     y = item.offsetTop;
+
     servSelector.style.top = y + "px";
     flag = true;
   });
@@ -108,21 +110,6 @@ servItem.forEach((item) => {
 // این بخش برای بخش نمونه کارهاست
 let myJob = document.querySelectorAll(".my_job_item");
 let myJobSelector = document.getElementById("myJobSelector");
-
-// myJob.forEach((item) => {
-//   item.addEventListener("click", () => {
-//     let parent = item.parentElement;
-
-//     myJobSelector.style.height = `${item.offsetHeight}px`;
-//     myJobSelector.style.width = `${item.offsetWidth}px`;
-//     myJobSelector.style.left = `${item.offsetLeft}px`;
-//     myJobSelector.style.top = `${item.offsetTop}px`;
-
-//     myJob.forEach((elem) => elem.classList.remove("my_job_menu_active"));
-//     item.classList.add("my_job_menu_active");
-//   });
-// });
-
 myJob.forEach((item) => {
   item.addEventListener("click", () => {
     myJobSelector.style.height = `${item.offsetHeight}px`;

@@ -238,7 +238,7 @@
     background-color: #fff;
   }
 
-/* 
+  /* 
   div.dropdown_menu > ul > a:hover {
     color: var(--mrl-primery-color);
   } */
@@ -958,5 +958,164 @@
   div.my_skill_item:hover div {
     border: 1px solid var(--mrl-primery-color);
     background-color: var(--mrl-secondery-color);
+  }
+
+  /* my comment section -------------------------------------------------- */
+  section.my_comment {
+    width: 100%;
+    padding: 80px 0px;
+    background-color: #f6f3fc;
+  }
+
+  div.my_comment_holder {
+    width: 100%;
+    padding: 0px 24px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+
+  div.my_comment_header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  div.my_comment_header > h2 {
+    font-size: 36px;
+    background: linear-gradient(
+      260deg,
+      var(--mrl-secondery-color) 0%,
+      var(--mrl-primery-color) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  div.my_comment_header > p {
+    font-size: 16px;
+    color: #140c1c;
+    text-align: center;
+  }
+
+  div.my_comment_slider {
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    justify-content: left;
+    overflow: hidden;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+    overflow: visible !important;
+    overflow-x: hidden;
+  }
+
+  .swiper-slide {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    gap: 16px !important;
+    border-radius: 24px;
+    padding: 24px;
+    cursor: grab;
+    user-select: none;
+  }
+
+  .swiper_item_holder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 16px;
+  }
+
+  .swiper_item_holder > p {
+    color: #140c1c;
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .swiper-slide > div.my_comment_info {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: right;
+    gap: 4px;
+  }
+
+  div.my_comment_info > h4 {
+    font-size: 18px;
+    color: var(--mrl-secondery-color);
+  }
+
+  div.my_comment_info > span {
+    font-size: 14px;
+    color: #140c1c;
+  }
+
+  div.my_comment-icon {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 2px;
+  }
+
+  div.my_comment-icon > i {
+    width: 20px !important;
+    height: 20px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--mrl-primery-color);
+  }
+
+  div.my_comment-icon > i:nth-child(2) {
+    rotate: 180deg;
+    transform-origin: center center;
+    transition: all 300ms ease-in-out;
+  }
+
+  .swiper-slide-active div.my_comment-icon > i:nth-child(2) {
+    rotate: 270deg;
+    transform-origin: left top;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100px !important;
+    object-fit: cover;
+    border-radius: 3px 3px 100px 3px;
+  }
+
+  .swiper-pagination {
+    position: unset !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px 0px;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #747779 !important;
+    width: 8px !important;
+    height: 8px !important;
+    margin: 0px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: var(--mrl-primery-color) !important;
   }
 }
