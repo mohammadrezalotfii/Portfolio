@@ -3,7 +3,8 @@
     width: 100%;
     height: 60px;
     padding: 40px 16px 0px 16px;
-    /* background-color: aqua; */
+    /* position: sticky;
+    z-index: 100; */
   }
 
   /* این بخش باید در هیروسکشن بعدی مورد استفاده قرار بگیرد نه هدر */
@@ -126,9 +127,9 @@
     );
     background-size: 200% 100%;
     background-position: 0% 50%;
-    padding: 14px 36px;
+    padding: 12px 24px;
     border-radius: 50px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     transition: background-position 300ms ease-in-out;
   }
@@ -200,14 +201,15 @@
 
   div.dropdown_menu {
     position: absolute;
-    top: 100%;
-    width: 100%;
-    height: fit-content;
+    top: 200%;
+    left: 0;
+    width: 0;
+    height: 0;
     background-color: var(--mrl-secondery-color);
-    z-index: 999;
+    z-index: 100;
     border-radius: 24px;
-    padding: 24px 48px;
     transition: all 300ms ease-in-out;
+    overflow: hidden;
   }
 
   div.dropdown_menu > ul {
@@ -217,6 +219,7 @@
     align-items: start;
     flex-direction: column;
     gap: 16px;
+    overflow: hidden;
   }
 
   div.dropdown_menu > ul > a {
@@ -224,7 +227,7 @@
     font-size: 18px;
     position: relative;
     padding: 12px 24px;
-    background: #000;
+    transition: all 300ms ease-in-out;
   }
 
   div.dropdown_menu > ul > a::before {
@@ -237,12 +240,16 @@
     height: 4px;
     border-radius: 10px;
     background-color: #fff;
+    transition: all 300ms ease-in-out;
   }
 
-  /* 
-      div.dropdown_menu > ul > a:hover {
-        color: var(--mrl-primery-color);
-      } */
+  div.dropdown_menu > ul > a:hover {
+    padding-right: 36px;
+  }
+
+  div.dropdown_menu > ul > a:hover::before {
+    width: 24px;
+  }
 
   main.main > div {
     width: 100%;
@@ -265,6 +272,8 @@
 
   section.hero_section > div.container > div.main_herosection {
     display: flex;
+    flex-direction: column-reverse;
+    gap: 24px;
   }
 
   @keyframes bit {
@@ -287,7 +296,7 @@
     align-items: center;
     justify-content: space-between;
     transform: translate(-50%, -50%);
-    top: 40%;
+    top: 20%;
     left: 50%;
   }
 
@@ -319,15 +328,15 @@
     animation: text_stroke 4s;
   }
 
-  div.hs_heading {
+  div.hs_heading_mobile {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 16px;
+    gap: 8px;
   }
 
-  div.hs_heading > h2 {
+  div.hs_heading_mobile > h2 {
     width: fit-content;
     display: inline-block;
     background: linear-gradient(
@@ -340,9 +349,43 @@
     font-size: 24px;
   }
 
-  div.hs_heading > h1 {
+  div.hs_heading_mobile > h1 {
     width: fit-content;
     display: inline-block;
+    background: linear-gradient(
+      260deg,
+      var(--mrl-secondery-color) 0%,
+      var(--mrl-primery-color) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+  }
+
+  div.hs_heading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  div.hs_heading > h2 {
+    width: fit-content;
+    display: none;
+    background: linear-gradient(
+      260deg,
+      var(--mrl-secondery-color) 0%,
+      var(--mrl-primery-color) 200%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+  }
+
+  div.hs_heading > h1 {
+    width: fit-content;
+    display: none;
     background: linear-gradient(
       260deg,
       var(--mrl-secondery-color) 0%,
@@ -382,9 +425,8 @@
 
   div.my_info {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: 24px;
   }
 
@@ -481,6 +523,7 @@
   div.hs_experience > div {
     width: 45%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: var(--mrl-primery-color);
@@ -488,7 +531,7 @@
   }
 
   div.hs_experience > div > span:nth-child(1) {
-    font-size: 28px;
+    font-size: 36px;
     font-weight: 800;
     letter-spacing: 8px;
     font-feature-settings: "lnum" 0;
@@ -496,22 +539,18 @@
 
   /* شمارنده ها */
   #hsEx {
-    width: 60px;
     transition: all 0.5s ease-in-out;
   }
 
   #hsPr {
-    width: 70px;
     transition: all 0.5s ease-in-out;
   }
 
   #hsFl {
-    width: 170px;
     transition: all 0.5s ease-in-out;
   }
 
   #hsCu {
-    width: 86px;
     transition: all 0.5s ease-in-out;
   }
 
@@ -632,7 +671,7 @@
   div.serv_selector {
     position: absolute;
     width: 100%;
-    /* height: 109px; */
+    height: 132px;
     background: linear-gradient(
       260deg,
       var(--mrl-primery-color) 0%,

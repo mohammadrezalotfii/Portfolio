@@ -211,6 +211,10 @@
     animation: text_stroke 4s;
   }
 
+  div.hs_heading_mobile {
+    display: none;
+  }
+
   div.hs_heading {
     width: 100%;
     display: flex;

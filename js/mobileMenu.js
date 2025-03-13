@@ -13,8 +13,9 @@ document.getElementById("mobileMenu").addEventListener("click", () => {
     closeMobileMenu.forEach((e) => {
       e.style.width = 60 + "%";
     });
-
-    // dropDown.style.height = 100+"px";    
+    dropDown.style.width = 100 + "%";
+    dropDown.style.height = 344 + "px";
+    dropDown.style.padding = 24 + "px";
     test = true;
     return;
   }
@@ -23,9 +24,9 @@ document.getElementById("mobileMenu").addEventListener("click", () => {
     openMobileMenu.forEach((e, i) => {
       if (i === 0) {
         e.style.width = 60 + "%";
-      }else if(i === 1){
+      } else if (i === 1) {
         e.style.width = 70 + "%";
-      }else if(i === 2){
+      } else if (i === 2) {
         e.style.width = 50 + "%";
       }
       e.style.left = 8 + "px";
@@ -33,7 +34,9 @@ document.getElementById("mobileMenu").addEventListener("click", () => {
     closeMobileMenu.forEach((e) => {
       e.style.width = 0 + "%";
     });
-    // dropDown.style.height = "fit-content";
+    dropDown.style.width = 0 + "%";
+    dropDown.style.height = 0 + "px";
+    dropDown.style.padding = 0 + "px";
     test = false;
     return;
   }

@@ -87,7 +87,6 @@ let flag = false;
 
 let servItem = document.querySelectorAll(".serv_item");
 servItem.forEach((item) => {
-  servSelector.style.height = item.offsetHeight + "px";
   item.addEventListener("mouseenter", () => {
     servItem.forEach((el) => {
       el.classList.remove("serv_hover");
