@@ -973,4 +973,137 @@
   .swiper-pagination-bullet-active {
     background-color: var(--mrl-primery-color) !important;
   }
+
+
+  /* my blog -------------------------------------------------------- */
+  section.my_blog {
+    width: 100%;
+    padding: 120px 0px;
+  }
+
+  div.blog_holder {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  div.blog_top {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  div.blog_top > h2 {
+    font-size: 44px;
+    background: linear-gradient(
+      260deg,
+      var(--mrl-secondery-color) 0%,
+      var(--mrl-primery-color) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  div.blog_down {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  div.blog_item {
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 380px;
+    padding: 16px;
+    display: flex;
+    align-items: end;
+  }
+
+  div.blog_item > img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transition: all 300ms ease-in-out;
+  }
+
+  div.blog_item > span.blog_tag {
+    position: absolute;
+    background-color: var(--mrl-primery-color);
+    color: white;
+    top: 8px;
+    right: 8px;
+    padding: 8px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    z-index: 10;
+  }
+
+  div.blog_text {
+    width: 100%;
+    border-radius: 16px;
+    background-color: white;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: all 300ms ease-in-out;
+    z-index: 10;
+  }
+
+  div.blog_text > div {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 16px;
+  }
+
+  div.blog_text > div > span {
+    display: flex;
+    color: var(--mrl-primery-color);
+    align-items: center;
+    justify-content: right;
+    font-size: 14px;
+    transition: all 300ms ease-in-out;
+  }
+
+  div.blog_text > a {
+    color: #140c1c;
+    font-size: 22px;
+    font-weight: 800;
+    transition: all 300ms ease-in-out;
+  }
+
+  a.blog_link {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  div.blog_item:hover div.blog_text {
+    background-color: var(--mrl-primery-color);
+  }
+
+  div.blog_item:hover div.blog_text > div > span {
+    color: white;
+  }
+
+  div.blog_item:hover div.blog_text > a {
+    color: white;
+  }
+
+  div.blog_item:hover img{
+    filter: blur(2px);
+    scale: 1.1;
+  }
 }
