@@ -120,3 +120,5 @@ myJob.forEach((item) => {
     item.classList.add("my_job_menu_active");
   });
 });
+
+// smooth scroler

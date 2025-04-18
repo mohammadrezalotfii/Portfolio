@@ -9,6 +9,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 i {
@@ -97,4 +98,12 @@ a {
 
 .logo {
   width: 80px;
+}
+
+section{
+  overflow: hidden;
+}
+
+header{
+  width: 100%;
 }
